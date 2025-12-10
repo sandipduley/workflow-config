@@ -9,7 +9,7 @@ $directory\
 [](fg:#F25EC4 bg:#F2615E)\
 $git_branch\
 $git_status\
-[](fg:#F2615E bg:#86BBD8)\
+[](fg:#F2615E bg:#3383F2)\
 $c\
 $elixir\
 $elm\
@@ -22,7 +22,7 @@ $nodejs\
 $nim\
 $rust\
 $scala\
-[](fg:#86BBD8 bg:#06969A)\
+[](fg:#3383F2 bg:#06969A)\
 $docker_context\
 [](fg:#06969A bg:#33658A)\
 $time\
@@ -104,7 +104,7 @@ format = '[$all_status$ahead_behind ]($style)'
 
 [golang]
 symbol = " "
-style = "bg:#86BBD8"
+style = "bg:#3383F2"
 format = '[ $symbol ($version) ]($style)'
 
 [gradle]
@@ -156,3 +156,4 @@ format = '[ ♥ $time ]($style)'
 success_symbol = "[](bold fg:#5EF2E6)"
 error_symbol = "[](bold fg:#F52000)"
 vicmd_symbol = "[](bold fg:#33658A)"
+
