@@ -1,0 +1,53 @@
+# ✨ Neon Glow Prompt Theme ✨
+
+# Icons
+icon_start="╭─"
+icon_user=" 🍁 "
+icon_host=" 🐙 "
+icon_directory=" 📂 "
+icon_branch="🌿"
+icon_end="╰⚡ "
+
+# Git Symbols
+git_ahead="↑"
+git_behind="↓"
+git_untracked="⌀"
+git_unstaged="•"
+git_staged="+"
+git_dirty="✗"
+git_clean="✓"
+
+# Neon Color Helpers (brighter / glow-ier)
+neon_red="%F{196}%B"        # Hyper Red
+neon_green="%F{82}%B"       # Neon Green
+neon_yellow="%F{226}%B"     # Bright Yellow
+neon_blue="%F{39}%B"        # Laser Blue
+neon_cyan="%F{51}%B"        # Icy Cyan
+neon_magenta="%F{201}%B"    # Pink Neon
+neon_white="%F{15}%B"       # Bright White
+neon_reset="%b%f"
+
+# Git Info Glow
+function git_prompt_info() {
+  local ref dirty
+  ref=$(git symbolic-ref --short HEAD 2>/dev/null)
+  [ -n "$ref" ] || return
+  dirty=$(git status --porcelain 2>/dev/null)
+  echo " ${neon_magenta}${icon_branch} ${ref}${dirty:+ ${git_dirty}}${neon_reset}"
+}
+
+# Glowy Prompt Line
+PROMPT=$'\n'\
+${neon_blue}${icon_start}\
+${neon_green}${icon_user}\
+${neon_yellow}'%n'${neon_reset}\
+${neon_blue}${icon_host}\
+${neon_cyan}'%m'${neon_reset}\
+${neon_white}${icon_directory}\
+${neon_magenta}'%~'${neon_reset}\
+'$(git_prompt_info)'$'\n'\
+${neon_red}${icon_end}${neon_reset}' '
+
+# Optional RPROMPT with time or venv
+# RPROMPT='${neon_cyan}%*${neon_reset}'
+
