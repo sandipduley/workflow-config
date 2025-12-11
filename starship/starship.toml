@@ -22,6 +22,7 @@ $nodejs\
 $nim\
 $rust\
 $scala\
+$lua\
 [](fg:#3383F2 bg:#06969A)\
 $docker_context\
 [](fg:#06969A bg:#24BBE3)\
@@ -144,6 +145,11 @@ format = '[ $symbol ($version) ]($style)'
 [scala]
 symbol = " "
 style = "bg:#86BBD8"
+format = '[ $symbol ($version) ]($style)'
+
+[lua]
+symbol = " "
+style = "bg:#24BBE3"
 format = '[ $symbol ($version) ]($style)'
 
 [time]
