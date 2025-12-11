@@ -24,9 +24,9 @@ $rust\
 $scala\
 [](fg:#3383F2 bg:#06969A)\
 $docker_context\
-[](fg:#06969A bg:#33658A)\
+[](fg:#06969A bg:#24BBE3)\
 $time\
-[ ](fg:#33658A)\
+[ ](fg:#24BBE3)\
 \n$character
 """
 
@@ -149,11 +149,10 @@ format = '[ $symbol ($version) ]($style)'
 [time]
 disabled = true
 time_format = "%R" # Hour:Minute Format
-style = "bg:#33658A"
+style = "bg:#24BBE3"
 format = '[ ♥ $time ]($style)'
 
 [character]
 success_symbol = "[](bold fg:#5EF2E6)"
 error_symbol = "[](bold fg:#F52000)"
 vicmd_symbol = "[](bold fg:#33658A)"
-
