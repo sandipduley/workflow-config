@@ -75,6 +75,7 @@ alias ram='fastfetch | grep "Memory"'
 alias online='fastfetch | grep "Uptime"'
 alias hmdr='cd ~'
 alias cd='z'
+alias lgit='lazygit'
 
 # --- trash-cli ---
 alias trash='trash-put'
