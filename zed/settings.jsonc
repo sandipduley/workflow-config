@@ -1,0 +1,121 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "git": {
+    "inline_blame": {
+      "show_commit_summary": true
+    }
+  },
+  "terminal": {
+    "font_size": 14.0
+  },
+  "zoomed_padding": true,
+  "status_bar": {
+    "cursor_position_button": false
+  },
+  "diagnostics": {
+    "inline": {
+      "enabled": true
+    }
+  },
+  "lsp_document_colors": "inlay",
+  "indent_guides": {
+    "line_width": 3,
+    "active_line_width": 3,
+    "background_coloring": "disabled"
+  },
+  "preferred_line_length": 70,
+  "soft_wrap": "editor_width",
+  "scrollbar": {
+    "diagnostics": "error",
+    "show": "never"
+  },
+  "scroll_sensitivity": 2.0,
+  "sticky_scroll": {
+    "enabled": false
+  },
+  "scroll_beyond_last_line": "one_page",
+  "current_line_highlight": "line",
+  "active_pane_modifiers": {
+    // "border_size": 0.0,
+    // "inactive_opacity": 0.5,
+    "border_size": 1.0,
+    "inactive_opacity": 0.7
+  },
+  "centered_layout": {
+    "left_padding": null,
+  },
+  "bottom_dock_layout": "contained",
+  "preview_tabs": {
+    "enable_preview_from_file_finder": true,
+  },
+  "tabs": {
+    "file_icons": true,
+    "git_status": true,
+    "show_close_button": "hover",
+  },
+  "title_bar": {
+    "show_menus": false,
+    "show_user_picture": true,
+    "show_branch_icon": true,
+  },
+  "base_keymap": "VSCode",
+  "icon_theme": "Material Icon Theme",
+  "tab_size": 2,
+  "ui_font_weight": 450.0,
+  "ui_font_family": ".ZedMono",
+  "git_panel": {
+    "collapse_untracked_diff": false,
+  },
+  "project_panel": {
+    "scrollbar": {
+      "show": "never"
+    },
+    "button": true,
+    "hide_root": true,
+    "hide_hidden": true,
+    "auto_reveal_entries": true,
+    "entry_spacing": "comfortable",
+    "dock": "right",
+  },
+  "buffer_line_height": "comfortable",
+  "buffer_font_weight": 600.0,
+  "relative_line_numbers": "enabled",
+  "prettier": {
+    "allowed": true,
+  },
+  "disable_ai": true,
+  "debugger": {
+    "stepping_granularity": "statement",
+  },
+  "languages": {
+    "Go": {
+      "preferred_line_length": 70,
+      "soft_wrap": "prefer_line",
+    },
+
+    "Python": {
+      "preferred_line_length": 70,
+      "soft_wrap": "prefer_line",
+    },
+  },
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 500,
+    },
+  },
+  "buffer_font_family": "Cousine Nerd Font Mono",
+  "vim_mode": true,
+  "ui_font_size": 15,
+  "theme": {
+    "mode": "system",
+    "light": "Catppuccin Mocha (Blur) [Light]",
+    "dark": "Catppuccin Macchiato (Blur)",
+  },
+}
