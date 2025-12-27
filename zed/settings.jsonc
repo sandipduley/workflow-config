@@ -7,6 +7,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "tab_bar": {
+    "show": false
+  },
   "git": {
     "inline_blame": {
       "show_commit_summary": true
@@ -53,6 +56,7 @@
   },
   "bottom_dock_layout": "contained",
   "preview_tabs": {
+    "enable_preview_multibuffer_from_code_navigation": false,
     "enable_preview_from_file_finder": true,
   },
   "tabs": {
@@ -119,3 +123,4 @@
     "dark": "Catppuccin Macchiato (Blur)",
   },
 }
+
