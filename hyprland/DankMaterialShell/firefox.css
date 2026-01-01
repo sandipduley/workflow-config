@@ -1,132 +1,160 @@
 @media -moz-pref("userChrome.theme-material") {
   :root {
-    --md-sys-color-primary: #815512;
-    --md-sys-color-surface-tint: #815512;
+    --md-sys-color-primary: #a93800;
+    --md-sys-color-surface-tint: #a93800;
     --md-sys-color-on-primary: #ffffff;
-    --md-sys-color-primary-container: #ffddb6;
-    --md-sys-color-on-primary-container: #2a1800;
-    --md-sys-color-secondary: #705b40;
+    --md-sys-color-primary-container: #ffdbcf;
+    --md-sys-color-on-primary-container: #380d00;
+    --md-sys-color-secondary: #7d5637;
     --md-sys-color-on-secondary: #ffffff;
-    --md-sys-color-secondary-container: #fbdebc;
-    --md-sys-color-on-secondary-container: #271905;
-    --md-sys-color-tertiary: #53643e;
+    --md-sys-color-secondary-container: #ffdcc4;
+    --md-sys-color-on-secondary-container: #2f1400;
+    --md-sys-color-tertiary: #7d571d;
     --md-sys-color-on-tertiary: #ffffff;
-    --md-sys-color-tertiary-container: #d6e9ba;
-    --md-sys-color-on-tertiary-container: #111f03;
+    --md-sys-color-tertiary-container: #ffddb4;
+    --md-sys-color-on-tertiary-container: #291800;
     --md-sys-color-error: #ba1a1a;
     --md-sys-color-on-error: #ffffff;
     --md-sys-color-error-container: #ffdad6;
     --md-sys-color-on-error-container: #410002;
-    --md-sys-color-background: #fff8f4;
-    --md-sys-color-on-background: #211b13;
-    --md-sys-color-surface: #fff8f4;
-    --md-sys-color-on-surface: #211b13;
-    --md-sys-color-surface-variant: #f0e0d0;
-    --md-sys-color-on-surface-variant: #4f4539;
-    --md-sys-color-outline: #827568;
-    --md-sys-color-outline-variant: #d3c4b4;
+    --md-sys-color-background: #fff8f6;
+    --md-sys-color-on-background: #271813;
+    --md-sys-color-surface: #fff8f6;
+    --md-sys-color-on-surface: #271813;
+    --md-sys-color-surface-variant: #f9ddd4;
+    --md-sys-color-on-surface-variant: #55433c;
+    --md-sys-color-outline: #88726b;
+    --md-sys-color-outline-variant: #dcc1b8;
     --md-sys-color-shadow: #000000;
     --md-sys-color-scrim: #000000;
-    --md-sys-color-inverse-surface: #362f27;
-    --md-sys-color-inverse-on-surface: #fceee2;
-    --md-sys-color-inverse-primary: #f6bc70;
-    --md-sys-color-primary-fixed: #ffddb6;
-    --md-sys-color-on-primary-fixed: #2a1800;
-    --md-sys-color-primary-fixed-dim: #f6bc70;
-    --md-sys-color-on-primary-fixed-variant: #643f00;
-    --md-sys-color-secondary-fixed: #fbdebc;
-    --md-sys-color-on-secondary-fixed: #271905;
-    --md-sys-color-secondary-fixed-dim: #dec2a2;
-    --md-sys-color-on-secondary-fixed-variant: #57432b;
-    --md-sys-color-tertiary-fixed: #d6e9ba;
-    --md-sys-color-on-tertiary-fixed: #111f03;
-    --md-sys-color-tertiary-fixed-dim: #bacd9f;
-    --md-sys-color-on-tertiary-fixed-variant: #3c4c29;
-    --md-sys-color-surface-dim: #e5d8cc;
-    --md-sys-color-surface-bright: #fff8f4;
+    --md-sys-color-inverse-surface: #3d2d27;
+    --md-sys-color-inverse-on-surface: #ffede8;
+    --md-sys-color-inverse-primary: #ffb59b;
+    --md-sys-color-primary-fixed: #ffdbcf;
+    --md-sys-color-on-primary-fixed: #380d00;
+    --md-sys-color-primary-fixed-dim: #ffb59b;
+    --md-sys-color-on-primary-fixed-variant: #812900;
+    --md-sys-color-secondary-fixed: #ffdcc4;
+    --md-sys-color-on-secondary-fixed: #2f1400;
+    --md-sys-color-secondary-fixed-dim: #f0bc96;
+    --md-sys-color-on-secondary-fixed-variant: #633e22;
+    --md-sys-color-tertiary-fixed: #ffddb4;
+    --md-sys-color-on-tertiary-fixed: #291800;
+    --md-sys-color-tertiary-fixed-dim: #f1be7a;
+    --md-sys-color-on-tertiary-fixed-variant: #624005;
+    --md-sys-color-surface-dim: #f0d4cb;
+    --md-sys-color-surface-bright: #fff8f6;
     --md-sys-color-surface-container-lowest: #ffffff;
-    --md-sys-color-surface-container-low: #fff1e5;
-    --md-sys-color-surface-container: #f9ecdf;
-    --md-sys-color-surface-container-high: #f3e6da;
-    --md-sys-color-surface-container-highest: #ede0d4;
+    --md-sys-color-surface-container-low: #fff1ec;
+    --md-sys-color-surface-container: #fff8f6;
+    --md-sys-color-surface-container-high: #fff8f6;
+    --md-sys-color-surface-container-highest: #fff8f6;
 
     --m3-radius: 12px;
     --m3-radius-sm: 10px;
     --m3-elev-0: none;
-    --m3-elev-1: 0 1px 2px rgba(0,0,0,.08), 0 1px 3px rgba(0,0,0,.06);
-    --m3-elev-2: 0 2px 6px rgba(0,0,0,.10), 0 1px 3px rgba(0,0,0,.06);
+    --m3-elev-1: 0 1px 2px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.06);
+    --m3-elev-2: 0 2px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
 
     --tab-height: 34px;
     --urlbar-height: 38px;
 
-    --state-hover: color-mix(in srgb, var(--md-sys-color-on-surface) 8%, transparent);
-    --state-press: color-mix(in srgb, var(--md-sys-color-on-surface) 12%, transparent);
+    --state-hover: color-mix(
+      in srgb,
+      var(--md-sys-color-on-surface) 8%,
+      transparent
+    );
+    --state-press: color-mix(
+      in srgb,
+      var(--md-sys-color-on-surface) 12%,
+      transparent
+    );
 
-    --focus-ring: 0 0 0 2px color-mix(in srgb, var(--md-sys-color-primary) 70%, transparent);
+    --focus-ring: 0 0 0 2px
+      color-mix(in srgb, var(--md-sys-color-primary) 70%, transparent);
   }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --md-sys-color-primary: #f6bc70;
-    --md-sys-color-surface-tint: #f6bc70;
-    --md-sys-color-on-primary: #462a00;
-    --md-sys-color-primary-container: #643f00;
-    --md-sys-color-on-primary-container: #ffddb6;
-    --md-sys-color-secondary: #dec2a2;
-    --md-sys-color-on-secondary: #3e2d16;
-    --md-sys-color-secondary-container: #57432b;
-    --md-sys-color-on-secondary-container: #fbdebc;
-    --md-sys-color-tertiary: #bacd9f;
-    --md-sys-color-on-tertiary: #263514;
-    --md-sys-color-tertiary-container: #3c4c29;
-    --md-sys-color-on-tertiary-container: #d6e9ba;
+    --md-sys-color-primary: #ffb59b;
+    --md-sys-color-surface-tint: #ffb59b;
+    --md-sys-color-on-primary: #5b1a00;
+    --md-sys-color-primary-container: #812900;
+    --md-sys-color-on-primary-container: #ffdbcf;
+    --md-sys-color-secondary: #f0bc96;
+    --md-sys-color-on-secondary: #49290d;
+    --md-sys-color-secondary-container: #633e22;
+    --md-sys-color-on-secondary-container: #ffdcc4;
+    --md-sys-color-tertiary: #f1be7a;
+    --md-sys-color-on-tertiary: #452b00;
+    --md-sys-color-tertiary-container: #624005;
+    --md-sys-color-on-tertiary-container: #ffddb4;
     --md-sys-color-error: #ffb4ab;
     --md-sys-color-on-error: #690005;
     --md-sys-color-error-container: #93000a;
     --md-sys-color-on-error-container: #ffdad6;
-    --md-sys-color-background: #18120c;
-    --md-sys-color-on-background: #ede0d4;
-    --md-sys-color-surface: #18120c;
-    --md-sys-color-on-surface: #ede0d4;
-    --md-sys-color-surface-variant: #4f4539;
-    --md-sys-color-on-surface-variant: #d3c4b4;
-    --md-sys-color-outline: #9c8e80;
-    --md-sys-color-outline-variant: #4f4539;
+    --md-sys-color-background: #1e100b;
+    --md-sys-color-on-background: #f9ddd4;
+    --md-sys-color-surface: #1e100b;
+    --md-sys-color-on-surface: #f9ddd4;
+    --md-sys-color-surface-variant: #55433c;
+    --md-sys-color-on-surface-variant: #dcc1b8;
+    --md-sys-color-outline: #a38c84;
+    --md-sys-color-outline-variant: #55433c;
     --md-sys-color-shadow: #000000;
     --md-sys-color-scrim: #000000;
-    --md-sys-color-inverse-surface: #ede0d4;
-    --md-sys-color-inverse-on-surface: #362f27;
-    --md-sys-color-inverse-primary: #815512;
-    --md-sys-color-primary-fixed: #ffddb6;
-    --md-sys-color-on-primary-fixed: #2a1800;
-    --md-sys-color-primary-fixed-dim: #f6bc70;
-    --md-sys-color-on-primary-fixed-variant: #643f00;
-    --md-sys-color-secondary-fixed: #fbdebc;
-    --md-sys-color-on-secondary-fixed: #271905;
-    --md-sys-color-secondary-fixed-dim: #dec2a2;
-    --md-sys-color-on-secondary-fixed-variant: #57432b;
-    --md-sys-color-tertiary-fixed: #d6e9ba;
-    --md-sys-color-on-tertiary-fixed: #111f03;
-    --md-sys-color-tertiary-fixed-dim: #bacd9f;
-    --md-sys-color-on-tertiary-fixed-variant: #3c4c29;
-    --md-sys-color-surface-dim: #18120c;
-    --md-sys-color-surface-bright: #3f3830;
-    --md-sys-color-surface-container-lowest: #130d07;
-    --md-sys-color-surface-container-low: #211b13;
-    --md-sys-color-surface-container: #251f17;
-    --md-sys-color-surface-container-high: #302921;
-    --md-sys-color-surface-container-highest: #3b342b;
+    --md-sys-color-inverse-surface: #f9ddd4;
+    --md-sys-color-inverse-on-surface: #3d2d27;
+    --md-sys-color-inverse-primary: #a93800;
+    --md-sys-color-primary-fixed: #ffdbcf;
+    --md-sys-color-on-primary-fixed: #380d00;
+    --md-sys-color-primary-fixed-dim: #ffb59b;
+    --md-sys-color-on-primary-fixed-variant: #812900;
+    --md-sys-color-secondary-fixed: #ffdcc4;
+    --md-sys-color-on-secondary-fixed: #2f1400;
+    --md-sys-color-secondary-fixed-dim: #f0bc96;
+    --md-sys-color-on-secondary-fixed-variant: #633e22;
+    --md-sys-color-tertiary-fixed: #ffddb4;
+    --md-sys-color-on-tertiary-fixed: #291800;
+    --md-sys-color-tertiary-fixed-dim: #f1be7a;
+    --md-sys-color-on-tertiary-fixed-variant: #624005;
+    --md-sys-color-surface-dim: #1e100b;
+    --md-sys-color-surface-bright: #47352f;
+    --md-sys-color-surface-container-lowest: #180b07;
+    --md-sys-color-surface-container-low: #271813;
+    --md-sys-color-surface-container: #2b1c17;
+    --md-sys-color-surface-container-high: #362621;
+    --md-sys-color-surface-container-highest: #42312b;
 
-    --m3-elev-1: 0 1px 2px rgba(0,0,0,.50), 0 1px 3px rgba(0,0,0,.35);
-    --m3-elev-2: 0 4px 10px rgba(0,0,0,.55), 0 1px 3px rgba(0,0,0,.35);
+    --m3-elev-1: 0 1px 2px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.35);
+    --m3-elev-2: 0 4px 10px rgba(0, 0, 0, 0.55), 0 1px 3px rgba(0, 0, 0, 0.35);
 
-    --state-hover: color-mix(in srgb, var(--md-sys-color-on-surface) 6%, transparent);
-    --state-press: color-mix(in srgb, var(--md-sys-color-on-surface) 10%, transparent);
+    --state-hover: color-mix(
+      in srgb,
+      var(--md-sys-color-on-surface) 6%,
+      transparent
+    );
+    --state-press: color-mix(
+      in srgb,
+      var(--md-sys-color-on-surface) 10%,
+      transparent
+    );
   }
 }
 
 /* idk if this even works, but the suggestion in the material updated readme bricks symbols no matter how many fallbacks I add */
 :root {
-  font-family: system-ui, "Inter Variable", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-family:
+    system-ui,
+    "Inter Variable",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji" !important;
 }
