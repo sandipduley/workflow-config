@@ -7,6 +7,22 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "cursor_shape": "bar",
+  "cursor_blink": true,
+  "hide_mouse": "on_typing",
+  "toolbar": {
+    "code_actions": true,
+    "quick_actions": true,
+    "breadcrumbs": true
+  },
+  "inline_code_actions": true,
+  "gutter": {
+    "folds": true,
+    "breakpoints": true,
+    "runnables": true
+  },
+  "buffer_font_size": 13.6,
+  "ensure_final_newline_on_save": true,
   "tab_bar": {
     "show": false
   },
@@ -16,19 +32,21 @@
     }
   },
   "terminal": {
-    "font_size": 14.0
+    "font_size": 13.0
   },
   "zoomed_padding": true,
   "status_bar": {
     "cursor_position_button": false
   },
   "diagnostics": {
+    "include_warnings": true,
     "inline": {
       "enabled": true
     }
   },
   "lsp_document_colors": "inlay",
   "indent_guides": {
+    "coloring": "indent_aware",
     "line_width": 3,
     "active_line_width": 3,
     "background_coloring": "disabled"
@@ -56,7 +74,7 @@
   },
   "bottom_dock_layout": "contained",
   "preview_tabs": {
-    "enable_preview_multibuffer_from_code_navigation": false,
+    "enable_preview_multibuffer_from_code_navigation": true,
     "enable_preview_from_file_finder": true,
   },
   "tabs": {
@@ -70,11 +88,12 @@
     "show_branch_icon": true,
   },
   "base_keymap": "VSCode",
-  "icon_theme": "Material Icon Theme",
+  "icon_theme": "Colored Zed Icons Theme Dark",
   "tab_size": 2,
-  "ui_font_weight": 450.0,
+  "ui_font_weight": 500.0,
   "ui_font_family": ".ZedMono",
   "git_panel": {
+    "dock": "right",
     "collapse_untracked_diff": false,
   },
   "project_panel": {
@@ -105,22 +124,27 @@
     },
 
     "Python": {
+      "colorize_brackets": true,
+      "inlay_hints": {
+        "show_background": false,
+        "enabled": false
+      },
       "preferred_line_length": 70,
       "soft_wrap": "prefer_line",
+      "format_on_save": "on"
     },
   },
   "autosave": {
     "after_delay": {
-      "milliseconds": 500,
-    },
+      "milliseconds": 400
+    }
   },
-  "buffer_font_family": "Cousine Nerd Font Mono",
+  "buffer_font_family": "MartianMono Nerd Font",
   "vim_mode": true,
-  "ui_font_size": 15,
+  "ui_font_size": 14.0,
   "theme": {
     "mode": "system",
     "light": "Catppuccin Mocha (Blur) [Light]",
-    "dark": "Catppuccin Macchiato (Blur)",
+    "dark": "Dark Plum Blossom (Blurred)",
   },
 }
-
