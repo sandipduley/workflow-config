@@ -1,171 +1,134 @@
-"$schema" = 'https://starship.rs/config-schema.json'
+"$schema" = "https://starship.rs/config-schema.json"
 
 format = """
-[](#9A348E)\
+[](#facc15)\
 $os\
 $username\
-[](bg:#F25EC4 fg:#9A348E)\
+[](bg:#fb923c fg:#facc15)\
 $directory\
-[](fg:#F25EC4 bg:#F2615E)\
+[](fg:#fb923c bg:#22c55e)\
 $git_branch\
 $git_status\
-[](fg:#F2615E bg:#24BBE3)\
+[](fg:#22c55e bg:#facc15)\
 $c\
 $elixir\
 $elm\
 $golang\
-$lua\
 $gradle\
 $haskell\
 $java\
 $julia\
 $nodejs\
 $nim\
-$python\
 $rust\
 $scala\
-[](fg:#24BBE3 bg:#007CE0)\
+$lua\
+[](fg:#facc15 bg:#2dd4bf)\
 $docker_context\
-[](fg:#007CE0 bg:#128BE0)\
-$time\
-[ ](fg:#128BE0)\
+[ ](fg:#2dd4bf)\
 \n$character
 """
 
-# Disable the blank line at the start of the prompt
 add_newline = true
 
-# You can also replace your username with a neat symbol like   or disable this
-# and use the os module below
 [username]
 show_always = true
-style_user = "bg:#9A348E"
-style_root = "bg:#9A348E"
-format = '[$user ]($style)'
-disabled = false
-
-# An alternative to the username module which displays a symbol that
-# represents the current operating system
-[os]
-style = "bg:#9A348E"
-disabled = true # Disabled by default
+style_user = "bg:#facc15 fg:#020617"
+style_root = "bg:#facc15 fg:#020617"
+format = "[$user ]($style)"
 
 [directory]
-style = "bg:#F25EC4"
+style = "bg:#fb923c fg:#020617"
 format = "[ $path ]($style)"
 truncate_to_repo = false
 truncation_length = 1000
 home_symbol = "~"
 
-# Here is how you can shorten some long paths by text replacement
-# similar to mapped_locations in Oh My Posh:
-[directory.substitutions]
-"Documents" = "󰈙 "
-"Downloads" = " "
-"Music" = " "
-"Pictures" = " "
-# Keep in mind that the order matters. For example:
-# "Important Documents" = " 󰈙 "
-# will not be replaced, because "Documents" was already substituted before.
-# So either put "Important Documents" before "Documents" or use the substituted version:
-# "Important 󰈙 " = " 󰈙 "
+[git_branch]
+symbol = ""
+style = "bg:#22c55e fg:#020617"
+format = "[ $symbol $branch ]($style)"
+
+[git_status]
+style = "bg:#22c55e fg:#020617"
+format = "[$all_status$ahead_behind ]($style)"
 
 [c]
 symbol = " "
-style = "bg:#24BBE3"
-format = '[ $symbol ($version) ]($style)'
+style = "bg:#facc15 fg:#020617"
+format = "[ $symbol ($version) ]($style)"
 
 [cpp]
 symbol = " "
-style = "bg:#24BBE3"
-format = '[ $symbol ($version) ]($style)'
-
-[docker_context]
-symbol = " "
-style = "bg:#128BE0"
-format = '[ $symbol $context ]($style)'
+style = "bg:#facc15 fg:#020617"
+format = "[ $symbol ($version) ]($style)"
 
 [elixir]
 symbol = " "
-style = "bg:#24BBE3"
-format = '[ $symbol ($version) ]($style)'
+style = "bg:#facc15 fg:#020617"
+format = "[ $symbol ($version) ]($style)"
 
 [elm]
 symbol = " "
-style = "bg:#24BBE3"
-format = '[ $symbol ($version) ]($style)'
-
-[git_branch]
-symbol = ""
-style = "bg:#F2615E"
-format = '[ $symbol $branch ]($style)'
-
-[git_status]
-style = "bg:#F2615E"
-format = '[$all_status$ahead_behind ]($style)'
+style = "bg:#facc15 fg:#020617"
+format = "[ $symbol ($version) ]($style)"
 
 [golang]
 symbol = " "
-style = "bg:#24BBE3"
-format = '[ $symbol ($version) ]($style)'
+style = "bg:#facc15 fg:#020617"
+format = "[ $symbol ($version) ]($style)"
 
 [gradle]
-style = "bg:#24BBE3"
-format = '[ $symbol ($version) ]($style)'
+style = "bg:#facc15 fg:#020617"
+format = "[ $symbol ($version) ]($style)"
 
 [haskell]
 symbol = " "
-style = "bg:#24BBE3"
-format = '[ $symbol ($version) ]($style)'
+style = "bg:#facc15 fg:#020617"
+format = "[ $symbol ($version) ]($style)"
 
 [java]
 symbol = " "
-style = "bg:#24BBE3"
-format = '[ $symbol ($version) ]($style)'
+style = "bg:#facc15 fg:#020617"
+format = "[ $symbol ($version) ]($style)"
 
 [julia]
 symbol = " "
-style = "bg:#24BBE3"
-format = '[ $symbol ($version) ]($style)'
+style = "bg:#facc15 fg:#020617"
+format = "[ $symbol ($version) ]($style)"
 
 [nodejs]
-symbol = ""
-style = "bg:#24BBE3"
-format = '[ $symbol ($version) ]($style)'
+symbol = " "
+style = "bg:#facc15 fg:#020617"
+format = "[ $symbol ($version) ]($style)"
 
 [nim]
 symbol = "󰆥 "
-style = "bg:#24BBE3"
-format = '[ $symbol ($version) ]($style)'
-
-[lua]
-symbol = " "
-style = "bg:#24BBE3"
-format = '[ $symbol ($version) ]($style)'
-
-[python]
-symbol = " "
-style = "bg:#24BBE3"
-format = '[ $symbol ($version) ]($style)'
+style = "bg:#facc15 fg:#020617"
+format = "[ $symbol ($version) ]($style)"
 
 [rust]
-symbol = ""
-style = "bg:#24BBE3"
-format = '[ $symbol ($version) ]($style)'
+symbol = " "
+style = "bg:#facc15 fg:#020617"
+format = "[ $symbol ($version) ]($style)"
 
 [scala]
 symbol = " "
-style = "bg:#24BBE3"
-format = '[ $symbol ($version) ]($style)'
+style = "bg:#facc15 fg:#020617"
+format = "[ $symbol ($version) ]($style)"
 
-[time]
-disabled = true
-time_format = "%R" # Hour:Minute Format
-style = "bg:#0092E1"
-format = '[ ♥ $time ]($style)'
+[lua]
+symbol = " "
+style = "bg:#facc15 fg:#020617"
+format = "[ $symbol ($version) ]($style)"
+
+[docker_context]
+symbol = " "
+style = "bg:#2dd4bf fg:#020617"
+format = "[ $symbol $context ]($style)"
 
 [character]
-success_symbol = "[](bold fg:#5EF2E6)"
-error_symbol = "[](bold fg:#F52000)"
-vicmd_symbol = "[](bold fg:#33658A)"
+success_symbol = "[](bold fg:#22c55e)"
+error_symbol = "[](bold fg:#ef4444)"
+vicmd_symbol = "[](bold fg:#facc15)"
 
