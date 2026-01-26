@@ -30,7 +30,7 @@ alias ip='ip -br addr'
 alias lg='lazygit'
 
 # --- caido ---
-alias caido='cd /home/apple/caido-desktop-x64-linux && ./caido'
+alias caido='cd ~/caido-desktop-x64-linux && ./caido'
 
 # --- trash-cli ---
 alias trash='trash-put'
