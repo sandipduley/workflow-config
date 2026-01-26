@@ -27,6 +27,7 @@ alias cd='z'
 alias lgit='lazygit'
 alias rm='rm -i'
 alias ip='ip -br addr'
+alias lg='lazygit'
 
 # --- caido ---
 alias caido='cd /home/apple/caido-desktop-x64-linux && ./caido'
